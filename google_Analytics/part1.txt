@@ -1,0 +1,59 @@
+## 올인원 패키지 : 구글 애널리틱스 ## 
+# PART 1 : Google Analytics 개요 # 
+1. Google Analytics란 무엇인가?
+- 사용해야하는 이유? 다양해진 온라인 행동패턴 > 고객을 알자
+- web/app 행동 데이터의 측정 및 분석을 위한 도구
+- GA를 통해 다양한 기능으로 데이터에서 Insight를 얻고 이를 기반으로 마케팅 액션을 취할 수 있음
+[Collect] > [Analyze] > [Insight] > [Action]
+- Beyond GA 360 :  {* 이름에 360이 붙으면 유료버전}
+    1) A/B 테스트
+    2) 구글 광고플랫폼과 연동
+    3) 고도화된 리타겟팅
+    4) 데이터 적재 및 ML활용
+    5) 데이터 시각화 > Data Studio
+
+2. 사용해야하는 이유?
+* GA의 목표? [홈페이지 목표]
+    - Ecommerce > selling products or services
+    - Lead generation > Collecting potential leads
+    - Content publisher > Engagement & frequent visitation
+    - Online information > Help customers find information
+* 중요단어: 세션! 이벤트!
+
+3. google marketing platform 활용
+보고서 흐름
+    who? how? > what?, what value?(conversion)
+4. 보고서 흐름 이해하기
+- 구글 애널리틱스를 어떻게 시작하나?
+    1) 계정발급
+    2) 크롬 브라우져 사용
+    3) analytics.google.com
+    4) 속성설정
+    Gtag.js 발급! 추적코드
+    태그생성>미리보기>배포,발급
+    google tag manager
+* 계정생성 후 만들어진 > 범용 사이트 태그(gtag.js)
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164504770-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-164504770-1');
+</script>
+
+5.Google Analyitcs가 데이터를 수집하는 방법
+- 웹,앱,키오스크, 기타프로그램
+    collection → configuration →
+    measure protocol
+- 전송되는 데이터
+    페이지뷰
+    event hits
+    ecommerce hits
+    social interaction hits
+6. Google Analytics 자주 하는 질문 Best 10
+1) 기존 ga스크립트를 gtag로 변환해야하나요?
+2) direct 비중이 왜케 높을까?
+3) ga데이터를 내부db에 저장가능한가?
+4) 페이지별 조회수 > 세션

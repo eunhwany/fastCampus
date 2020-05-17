@@ -1,0 +1,102 @@
+## 올인원 패키지 : 구글 애널리틱스 ## 
+# PART 2 : Google Analytics 기본보고서 # 
+1. 한눈에 들어오는 기본보고서
+- who?
+- how?
+- what?
+- what value?
+
+* Google Analytics 사이트 > 탐색 > 데모계정 발급
+
+2. Demession & Metric 이해하기
+$ Dimensions * Metric = 약 400가지
+* Dimensions : 데이터의 특징이나 성질을 묘사
+예) 국가,도시,언어,소스,페이지
+- User city or region
+- Referring traffic source
+- Browser type
+- Operating System
+
+* Metrics : 데이터의 정량적 요소
+예) 세션수,사용자,페이지뷰
+- Number of sessions
+- Number of users
+- Pageviews
+- Time on site
+
+* Google Analytics의 모든 보고서 → Dimensions와 Metrics의 조합
+
+3. 반드시 알아야하는 기본 지표 A 
+- 주요지표 : User > cookie 기반
+    same device & Browser : 다른브라우저로 동일 계정으로 접속시 따로 카운트 (2명으로 집계)
+
+4. 반드시 알아야하는 주요지표 B
+-pageview & unique pageview
+-event & unique event: 세션기준으로 중복을 제거한 이벤트
+카테고리, 액션, 라벨
+데이터를 태깅하여 넣을수 있다!
+
+5. 반드시 알아야할 기본지표 C
+- bounce rate = bounces / sessions × 100%
+: ga와 상호작용 횟수가 1회인 session
+- exits rare = exits / pageviews ×100%
+: 페이지에서 사용자가 종료한 횟수
+- session duration : 사용자가 세션에  첫 상호작용에서 마지막 상호작용까지 평균적으로 머문 시간
+6. Google Analytics 잘 쓰기 위한 구축 A
+
+- structure
+ 계정 > 속성 > 보기
+- 클릭 이벤트
+tag manager
+- 맞춤설정기준
+7. Google Analytics 잘 쓰기 위한 구축 B
+
+- 맞춤캠페인를 위한 UTM태깅
+- 구글에드워즈 자동추적
+- utm 수동 파라메터 추적
+
+8. 홈 보고서와 맞춤 설정 메뉴보기
+- 콘텐츠 분류 > 페이지단으로 묶어주기(그룹핑)
+- 목표설정
+- 관리 > 보기설정
+: 붓 필터링은 default세팅체크
+: 사이트검색설정 > 사이트에 검색기능이 있을때 활성화 설정! 검색어 매개변수 확인
+- 맞춤설정
+: 대시보드
+: 맞춤보고서
+
+9. 잠재고객-획득-행동-전환 보고서 A
+- 비대면 고객수 탐색
+사용자 한명당 몇분을 머무는가?
+얼마나 페이지수를 넘기나?
+- 활성사용자: 유저수 추이 
+1일 7일 15일 30일간
+- 동질집단분석
+: 동일한특성으로 고객을 묶어놓은것
+- 사용자 탐색기
+- 인구통계
+- 관심분야 카테고리
+- 행동
+: 신규방문자/재방문자
+: 방문빈도, 최근구매일
+
+10. 잠재고객-획득-행동-전환 보고서 B
+- 참여도
+- 기술
+: 브라우저, 운영체제, 화면해상도, 화면색상 등
+: 네트워크
+- 사용자 흐름
+- 획득
+: 전체트래픽 > 채널, 트리맵, 소스/매체, 추천
+: 캠페인
+- 행동
+: 사이트 콘텐츠 < 모든페이지, 방문페이지, 종료페이지
+: 사이드 속도
+: 사이트 검색 - 관리 > 보기 설정
+: 이벤트 - 인기이벤트(클릭)
+- 전환
+: 목표 - 전자상거래
+    : 다채널 유입경로(직접, 지원전환수, 인기전환경로, 소요시간 등)
+** Google Analytics : 의사결정을 하는데 도움을 주는 툴 > 많이 써볼수록 익숙해짐!
+
+
